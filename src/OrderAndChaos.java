@@ -94,7 +94,11 @@ public class OrderAndChaos extends Game {
             moveCount++;
 
             if (anyWin(move, team)) {
-                System.out.println("Congratulations !!!\nPlayer " + team.getName() + " move Won this game.");
+                while (team.getExtraProperty() != "Order") {
+                    team = teams.pop();
+                }
+                System.out.println(
+                        "Congratulations" + team.getName() + "!!!\nPlayer " + player.name() + " move Won this game.");
                 break;
             }
 
