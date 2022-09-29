@@ -1,16 +1,15 @@
 
 public enum PieceColor {
-    BLACK("black"),
-    WHITE("white"),
-    RED("red"),
-    BLUE("blue");
-
+    BLACK("black");
     private final String color;
 
     PieceColor(String color) {
         this.color = color;
     }
 
+    /**
+     * @return color of the piece.
+     */
     public String getColor() {
         return this.color;
     }

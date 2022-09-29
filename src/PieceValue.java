@@ -9,6 +9,9 @@ public enum PieceValue {
         this.value = value;
     }
 
+    /**
+     * @return value of the piece
+     */
     public String getValue() {
         return value;
     }
