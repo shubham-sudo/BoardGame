@@ -82,6 +82,7 @@ public class TicTacToe extends Game {
             if (moveCount == (Math.pow(size, 2) - 1)) {
                 System.out.println("No more moves left! Its a Stalemate");
                 teams.addLast(team);
+                this.stalemates++;
                 break;
             }
             teams.addLast(team);

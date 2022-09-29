@@ -8,6 +8,7 @@ public abstract class Game {
     protected Deque<Team> teams;
     private final ArrayList<IRender> renderers;
     protected ArrayList<PlayingPiece> playingPieces;
+    protected int stalemates = 0;
 
     /**
      * Initialize teams, renderers & playing pieces.
@@ -166,6 +167,7 @@ public abstract class Game {
         for (Team team : teams) {
             System.out.println(team.getName() + " Won " + team.getScore() + " Game(s)");
         }
+        System.out.println("There were " + this.stalemates + " stalemates.");
     }
 
     /**
